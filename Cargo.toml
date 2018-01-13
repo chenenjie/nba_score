@@ -1,0 +1,11 @@
+[package]
+name = "nba_score"
+version = "0.1.0"
+authors = ["chenej <chenej@gzyitop.com>"]
+
+[dependencies]
+failure = "0.1.1"
+reqwest = "0.8.2"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_json = "1.0.9"
