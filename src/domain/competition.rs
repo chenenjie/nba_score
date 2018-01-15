@@ -1,3 +1,4 @@
+use serde_json::Value;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AnnounceBoard{
@@ -5,6 +6,7 @@ pub struct AnnounceBoard{
     pub second: String,
     pub list: Vec<Competition>,
 }
+
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Competition{
@@ -17,8 +19,8 @@ pub struct Competition{
     pub start: String,
     pub home_team: String,
     pub visit_team: String,
-    pub home_score: String,
-    pub visit_score: String,
+    pub home_score: Value,
+    pub visit_score: Value,
     pub period_cn: String,
     pub from: String,
     pub code: String,
